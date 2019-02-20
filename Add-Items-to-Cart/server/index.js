@@ -11,9 +11,13 @@ const store = require('../database/seed.js');
 app.use('/product/:productId', express.static(`${__dirname}/../client/dist`))
 app.use(bodyParser.json());
 
-app.get('/product/:productId/item', (req, res) => {
-  let item = req.params.productId;
-  store.checkInventoryList(item, (err, inventory) => {
+  
+  app.get('/product/:productId/item', (req, res) => {
+    let item = req.params.productId;
+    res.header('Access-Control-Allow-Origin', '*');
+    res.header('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content-Type, Accept');
+    res.header('Access-Control-Allow-Methods', 'GET,PUT, POST,DELETE');
+    store.checkInventoryList(item, (err, inventory) => {
     if (err) {
       res.status(404).send('request failed');
     }
