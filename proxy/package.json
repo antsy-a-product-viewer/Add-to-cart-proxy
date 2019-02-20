@@ -2,18 +2,17 @@
   "name": "add-to-cart-proxy",
   "version": "1.0.0",
   "description": "",
-  "main": "server.js",
+  "main": "nodemon ./server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/antsy-a-product-viewer/Add-to-cart-proxy.git"
+    "start": "nodemon ./server.js"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.16.4"
+    "express": "^4.16.4",
+    "nodemon": "^1.18.10",
+    "react": "^16.8.2",
+    "react-dom": "^16.8.2"
   }
 }
