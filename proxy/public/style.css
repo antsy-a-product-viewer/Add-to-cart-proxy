@@ -1,0 +1,41 @@
+.header {
+  display: flex;
+}
+
+
+.name {
+  font-size: 35px;
+  color: orange;
+  margin-top: 1%;
+}
+
+.mainContainer {
+  margin-left: 5%;
+  display: flex;
+}
+
+.searchbar {
+  display: inline;
+}
+
+.leftSection{
+  margin-left: 0px;
+}
+
+ 
+
+.rightSection{
+  margin-left: 60px;
+} 
+
+.container {
+  margin-left: 3%;
+}
+
+.images {
+  width: 400px;
+}
+
+.payment {
+  width: 560;
+} 

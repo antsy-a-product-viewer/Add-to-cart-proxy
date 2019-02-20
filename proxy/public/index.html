@@ -2,17 +2,45 @@
 <!DOCTYPE html>
 <html lang="en">
   <head> 
+      <link rel="stylesheet" href="./style.css">
       <title>Antsy a Product Viewer </title> 
   </head>
   <body>
-    <div id="carousel"></div>
-    <div id="store"></div>
-    <div id="reviews"></div>
-    <script src="https://unpkg.com/react@16/umd/react.development.js"></script>
-    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
-    <script src="http://localhost:3010/product/1/bundle.js"></script>
-    <script src="http://localhost:3000/product/1/bundle.js"></script>
-    <script src="http://localhost:3020/product/1/bundle.js"></script>
+    <div class="container">
+      <div class="header">
+        <div class="name">Antsy </div>
+            <img class="searchbar" src="https://i.imgur.com/GsgxqDW.png" >
+          </div>
+          <div>
+            <img class="categories" src="https://i.imgur.com/Z93K9lU.png" > 
+          </div>
+      <div class="mainContainer">
+
+
+        <span class="leftSection">
+          <div id="carousel"></div>
+          <br/><br/><br/><br/><br/>
+          <div id="reviews"></div>
+          <img class="payment" src="https://i.imgur.com/quyydqR.png">
+        </span>
+
+        <span class="rightSection">
+            <div id="store"></div>
+              <img class="images" src="https://i.imgur.com/zauT4MP.png">
+        </span>
+      </div>
+      <div class="footer"> 
+          <img src="https://i.imgur.com/GnIAYfY.png">
+          <img src="" >
+      </div>
+      
+      <script src="https://unpkg.com/react@16/umd/react.development.js"></script>
+      <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+      <script src="http://localhost:3010/product/1/bundle.js"></script>
+      <script src="http://localhost:3000/product/1/bundle.js"></script>
+      <script src="http://localhost:3020/product/1/bundle.js"></script>
+    </div>
   </body>
+
 </html>
 

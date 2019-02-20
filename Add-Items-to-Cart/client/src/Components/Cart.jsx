@@ -50,7 +50,7 @@ class Cart extends React.Component {
   postingDescription() {
     // let endpoint = window.location.pathname + 'item';
     let endpoint = 'http://localhost:3000' + window.location.pathname + 'item'
-    fetch(`${endpoint}`)
+    fetch(endpoint)
       .then((res) => {
         return res.json()
       })

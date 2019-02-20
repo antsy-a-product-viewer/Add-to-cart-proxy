@@ -15,8 +15,8 @@ app.use(bodyParser.json());
   app.get('/product/:productId/item', (req, res) => {
     let item = req.params.productId;
     res.header('Access-Control-Allow-Origin', '*');
-    res.header('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content-Type, Accept');
     res.header('Access-Control-Allow-Methods', 'GET,PUT, POST,DELETE');
+    res.header('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content-Type, Accept');
     store.checkInventoryList(item, (err, inventory) => {
     if (err) {
       res.status(404).send('request failed');
